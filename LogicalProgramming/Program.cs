@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Welcome to Logical Programs");
         bool end = true;
-        Console.WriteLine("1.Fibonacci series \n 2. End the Program");
+        Console.WriteLine("1.Fibonacci series \n 2. Perfect No \n  3. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute");
@@ -20,6 +20,10 @@ class Program
                     fibo.Rfibo();
                     break;
                 case 2:
+                    PerfectNo perfectNo = new PerfectNo();
+                    perfectNo.Perfect();
+                    break;
+                case 3:
                     end = false;
                     break;
                 default:
