@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Welcome to Logical Programs");
         bool end = true;
-        Console.WriteLine("1.Fibonacci series\n 2.Perfect No\n 3.Prime Number\n 4.Reverse a no \n 5 Return Notes\n 6.Day of Week\n 7.Temperature Conversion\n 8.Monthly Payments\n9. Coupon Numbers\n 10. End the Program");
+        Console.WriteLine("1.Fibonacci series\n 2.Perfect No\n 3.Prime Number\n 4.Reverse a no \n 5 Return Notes\n 6.Day of Week\n 7.Temperature Conversion\n 8.Monthly Payments\n9. Coupon Numbers\n 10.StopWatch \n 11. End sthe Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute");
@@ -53,6 +53,10 @@ class Program
                     no.CouponNo();
                     break;
                 case 10:
+                    StopwatchProgram stopwatch = new StopwatchProgram();
+                    stopwatch.StopWatch();
+                    break;
+                case 11:
                     end = false;
                     break;
                 default:
